@@ -1,8 +1,9 @@
 [package]
 name = "sni_rs"
-description = "Allow reading SNI host name from ClientHello."
+description = "Allow reading SNI host name from ClientHello asynchronously."
 keywords = ["sni", "host", "ClientHello"]
 categories = ["network-programming"]
+repository = "https://github.com/pan93412/sni_rs"
 license = "ISC"
 version = "1.0.0"
 edition = "2021"
