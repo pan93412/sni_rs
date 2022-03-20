@@ -14,10 +14,14 @@ use tokio::{
 /// Get the Server Name Indication from the ClientHello part
 /// of a raw TLS stream asynchronously.
 ///
+/// 
 /// The reader could be a `TcpStream`.
 ///
 /// It'll throw if the ClientHello is not valid,
 /// or the length is invalid.
+/// 
+/// The related specification of this part can be seen
+/// in https://tools.ietf.org/html/rfc5246
 pub async fn read_sni_host_name_from_client_hello<R: AsyncRead>(
     mut reader: Pin<&mut R>,
 ) -> io::Result<String> {
