@@ -1,0 +1,15 @@
+[package]
+name = "sni_rs"
+description = "Allow reading SNI host name from ClientHello."
+keywords = ["sni", "host", "ClientHello"]
+categories = ["network-programming"]
+license = "ISC"
+version = "1.0.0"
+edition = "2021"
+authors = ["Brandon Pitman <bran@bran.land>", "Yi-Jyun Pan <pan93412@gmail.com>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+byteorder = "1.4.3"
+tokio = { version = "1.17.0", features = ["io-std", "io-util"] }
